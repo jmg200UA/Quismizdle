@@ -1,0 +1,515 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App{
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body{
+  background-color: rgb(0, 28, 48);
+}
+
+.carta{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabla{
+  animation: fadeIn 1s ease forwards;
+  border-spacing: 6px;
+  margin-top: 20px;
+}
+
+.tabla th, .tabla td{
+  text-align: center;
+  padding: 8px;
+  width: 85px;
+  font-family: 'Zilla Slab', serif;
+  font-size: 20px;
+}
+
+.tabla td{
+  height: 45px;
+  border: 3px solid rgb(218, 255, 251);
+  background-color: rgb(187, 37, 37);
+  height: 70px;
+  color: white;
+  border-radius: 5px;
+
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
+}
+
+.tabla th{
+  border-bottom: 3px solid #fff;
+  color: white;
+}
+.containerStyle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listapersonajes{
+  list-style-type: none;
+  background-color: #61dafb;
+  padding: 5px;
+  width: 260px;
+  border-radius: 7px;
+}
+
+.encontrados{
+  padding: 5px;
+  font-family: 'Zilla Slab', serif;
+  color: white;
+  font-size: 20px;
+  border-bottom: 3px solid white;
+}
+
+.nofound{
+  padding: 5px;
+  font-family: 'Zilla Slab', serif;
+  color: white;
+  font-size: 20px;
+}
+
+.encontrados:hover{
+  background-color: white;
+  cursor: pointer;
+  color: #61dafb;
+}
+
+.textBoxStyle{
+  color: #fff;
+  width: 208px;
+  height: 30px;
+  font-size: 18px;
+  border: 3.5px solid rgb(218, 255, 251);
+  padding: 5px;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: rgb(23, 107, 135);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
+}
+
+.textBoxStyle::placeholder{
+  color: white;
+}
+
+.buttonStyle{
+  padding: 8px;
+  font-size: 21px;
+  border: 3.5px solid rgb(218, 255, 251);
+  border-radius: 10px;
+  background-color: rgb(100, 204, 197);
+  transition: background-color 0.5s;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
+}
+
+.buttonStyle:hover{
+  cursor: pointer;
+  background-color: green;
+  .iconStyle{
+    color: white;
+  }
+}
+
+.iconStyle{
+  margin-right: 3px;
+  transition: background-color 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes pause {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes rotateAndPause {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  12.5%, 37.5% {
+    transform: rotate(90deg);
+  }
+  25%, 62.5% {
+    transform: rotate(180deg);
+  }
+  50%, 87.5% {
+    transform: rotate(270deg);
+  }
+}
+
+.green-background {
+  background-color: rgb(53, 162, 159) !important;
+  color: white;
+}
+
+.error{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorText{
+  font-family: 'Zilla Slab', serif;
+  font-size: 20px;
+  background-color: rgb(11, 102, 106);
+  color: white;
+  width: 250px;
+  padding: 10px;
+  margin-top: 7px;
+}
+
+.intentos{
+  color: rgb(218, 255, 251);
+  font-size: 20px;
+  padding: 5px;
+  width: 260px;
+  height: 30px;
+  transform: translate(-68px);
+  font-family: 'Zilla Slab', serif;
+}
+
+.help{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+
+  color: rgb(218, 255, 251);
+  font-size: 20px;
+  width: 25px;
+  transform: translate(-21px);
+  font-family: 'Zilla Slab', serif;
+  border: 3px solid rgb(218, 255, 251);
+  border-radius: 5px;
+}
+
+.help:hover{
+  cursor: pointer;
+  color: white;
+  border: 3px solid #fff;
+}
+
+.tooltip {
+  font-family: 'Zilla Slab', serif;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 200px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 4px;
+  font-size: 17px;
+}
+
+.help:hover .tooltip {
+  display: block;
+}
+
+.titlestyle{
+  font-family: 'Lilita One', cursive;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+
+.parag{
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
+  font-size: 23px;
+  font-family: 'Zilla Slab', serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* Estilos del modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  background-color: rgb(100, 204, 197);
+  padding: 20px;
+  z-index: 1001;
+  border: 3.5px solid rgb(23, 107, 135);
+  border-radius: 10px;
+}
+
+.textBoxName{
+  font-family: 'Zilla Slab', serif;
+  width: 208px;
+  height: 30px;
+  font-size: 18px;
+  border: 3.5px solid rgb(23, 107, 135);
+  padding: 5px;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: rgb(218, 255, 251);
+}
+
+.buttonStyleName{
+  height: 47px;
+  font-family: 'Zilla Slab', serif;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 21px;
+  border: 3.5px solid rgb(23, 107, 135);
+  border-radius: 10px;
+  background-color: rgb(218, 255, 251);
+  transition: background-color 0.5s;
+  margin-top: 15px;
+}
+
+.buttonStyleName:hover{
+  cursor: pointer;
+  color: white;
+  background-color: green;
+  border: 3.5px solid rgb(218, 255, 251);
+  .iconStyle{
+    color: white;
+  }
+}
+
+.stripe {
+  position: fixed;
+  top: 0;
+  left: 50%; /* Centrar la franja horizontalmente */
+  transform: translateX(-50%); /* Centrar correctamente */
+  width: 80%;
+  height: 100%;
+  background-color: rgb(3, 35, 60); /* Color de la franja */
+  z-index: -1; /* Colocar detrás de otros elementos */
+}
+
+.titrank{
+  font-family: 'Zilla Slab', serif;
+  color: white;
+}
+
+.corona{
+  color: rgb(255, 253, 140);
+  
+  animation: spin 2s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.ranking{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.paper-table {
+  font-family: 'Zilla Slab', serif;
+  margin-top: -10px;
+  font-size: 17px;
+
+  /* Estilos generales para la tabla */
+  background-color: #fff;
+  border: 3.5px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding-left: 25px;
+  padding-right: 20px;
+  position: relative; /* Importante para la posición de las líneas arrancadas */
+  width: fit-content; /* Ajusta el ancho al contenido */
+
+  /* Líneas de una hoja de papel */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 20px,
+    rgba(0, 0, 0, 0.1) 20px,
+    rgba(0, 0, 0, 0.1) 21px
+  );
+
+  /* Puntos en el lateral */
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 10px;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.2) 50%,
+      transparent 50%
+    );
+    background-position: 50% 0;
+    background-size:5px 5px;
+    background-repeat: repeat-y;
+  }
+
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
+}
+
+.paper-table td, .paper-table th{
+  padding: 10px;
+}
+
+.rank{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+
+  font-size: 22px;
+  transform: translate(-41px);
+  font-family: 'Zilla Slab', serif;
+}
+
+.rankicon{
+  color: rgb(218, 255, 251);
+}
+
+.rankicon:hover{
+  color: white;
+}
+
+.titulopopup{
+  color: rgb(0, 28, 48);
+  font-family: 'Zilla Slab', serif;
+}
+
+.winCard{
+  border: 3.5px solid rgb(151, 255, 244);
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 260px;
+  background-color: rgb(11, 102, 106);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
+
+  animation: aparecer 1s ease-in-out;
+  transform-origin: center bottom;
+}
+
+.winText{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Zilla Slab', serif;
+  color: white;
+}
+
+.wintrys{
+  font-size: 20px;
+  color: white;
+  font-family: 'Zilla Slab', serif;
+}
+
+.barra{
+  font-size: 20px;
+  font-family: 'Zilla Slab', serif;
+  padding-top: 17px;
+  color: rgb(218, 255, 251);
+  border-top: 3px solid rgb(218, 255, 251);
+}
+
+.horas{
+  color: white;
+  font-family: 'Zilla Slab', serif;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
